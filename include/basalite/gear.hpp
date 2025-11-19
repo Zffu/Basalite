@@ -6,16 +6,26 @@
 #pragma once
 
 #include <string>
+#include <unordered_set>
 
 namespace basalite {
 
 class gear {
 private:
+	/** @brief Gears required to run this gear. */
+	std::unordered_set<std::string> dependencies;
 
 public:
+	/** @brief The gear name. */
 	std::string name;
 
+	/**
+	 * @brief Creates a gear with the given name.
+	 * 
+	 * @param name the gear name.
+	 */
 	gear(std::string name);
+
 };
 
 }
