@@ -14,10 +14,12 @@ namespace basalite {
 class basalite_core {
 private:
 	/** @brief The registered gears. */
-	std::unordered_map<std::string, gear> gears;
+	std::unordered_map<std::string, gear*> gears;
 
 public:
-	basalite_core* instance;
+	static basalite_core* instance;
+
+	gear* get_gear(std::string name);
 
 };
 

@@ -14,6 +14,8 @@ class gear {
 private:
 	/** @brief Gears required to run this gear. */
 	std::unordered_set<std::string> dependencies;
+	
+	bool has_dependencies();
 
 public:
 	/** @brief The gear name. */
@@ -32,6 +34,8 @@ public:
 	 * @param name the gear name to add as an dependency.
 	 */
 	gear* needs(std::string name);
+
+	void run();
 
 };
 
