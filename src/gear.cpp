@@ -24,6 +24,8 @@ void gear::run() {
 
 
 	for(std::string dep : this->dependencies) {
+		if(basalite_core::instance->already_ran(dep)) continue;
+
 		gear* gear = basalite_core::instance->get_gear(dep);
 
 		if(gear == nullptr) {
