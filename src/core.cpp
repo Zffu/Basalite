@@ -22,8 +22,6 @@ bool basalite_core::already_ran(std::string name) {
 }
 
 void basalite_core::run_gear(gear* gr) {
-	std::cout << INFO_PREFX << "Running gear " << gr->name;
-
 	for(std::string dep : gr->dependencies) {
 		if(this->already_ran(dep)) continue;
 
