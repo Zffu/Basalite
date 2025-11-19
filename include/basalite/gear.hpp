@@ -1,6 +1,6 @@
 /**
- * @file task.hpp
- * @details Task related definitions
+ * @file gear.hpp
+ * @details Gear related definitions
  */
 
 #pragma once
@@ -9,13 +9,13 @@
 
 namespace basalite {
 
-class task {
+class gear {
 private:
 
 public:
 	std::string name;
 
-	task(std::string name);
+	gear(std::string name);
 };
 
 }
