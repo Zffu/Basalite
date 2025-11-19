@@ -1,0 +1,1 @@
+clang++ -std=c++20 -Iinclude -Isrc test/main.cpp -o main.exe

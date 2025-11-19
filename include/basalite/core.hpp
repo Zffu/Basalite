@@ -17,10 +17,27 @@ private:
 	std::unordered_map<std::string, gear*> gears;
 
 public:
+	/** @brief The current basalite core. */
 	static basalite_core* instance;
 
+	/** 
+	 * @brief Gets the gear.
+	 * 
+	 * @param the gear name to get.
+	 * 
+	 * @return the gear.
+	 * @retval nullptr the gear was not found.
+	 */
 	gear* get_gear(std::string name);
 
+	/**
+	 * @brief Registers a gear.
+	 * 
+	 * @param gear the gear to return.
+	 */
+	void register_gear(gear* gear);
 };
 
 }
+
+#include <core.tpp>

@@ -11,13 +11,10 @@
 namespace basalite {
 
 class gear {
-private:
+public:
 	/** @brief Gears required to run this gear. */
 	std::unordered_set<std::string> dependencies;
-	
-	bool has_dependencies();
 
-public:
 	/** @brief The gear name. */
 	std::string name;
 
@@ -41,3 +38,4 @@ public:
 
 }
 
+#include <gear.tpp>
