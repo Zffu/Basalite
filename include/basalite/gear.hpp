@@ -26,6 +26,13 @@ public:
 	 */
 	gear(std::string name);
 
+	/**
+	 * @brief Adds a gear dependency.
+	 * 
+	 * @param name the gear name to add as an dependency.
+	 */
+	gear* needs(std::string name);
+
 };
 
 }
