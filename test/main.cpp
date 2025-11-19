@@ -10,6 +10,8 @@ int main() {
 	gear* dep1 = new gear("dep1");
 	gear* dep2 = new gear("dep2");
 
+	dep1->needs("dep2");
+
 	core->register_gear(dep1);
 	core->register_gear(dep2);
 

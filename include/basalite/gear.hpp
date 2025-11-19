@@ -34,6 +34,14 @@ public:
 
 	void run();
 
+	virtual bool can_skip() {
+		return false;
+	}
+
+	virtual void execute() {
+		
+	}
+
 };
 
 }

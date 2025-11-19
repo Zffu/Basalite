@@ -41,6 +41,8 @@ public:
 	void register_gear(gear* gear);
 
 	bool already_ran(std::string gear);
+
+	void run_gear(gear* gear);
 };
 
 }

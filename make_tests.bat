@@ -1,1 +1,1 @@
-clang++ -std=c++20 -Iinclude -Isrc test/main.cpp -o main.exe
+clang++ -std=c++20 -Iinclude src/core.cpp src/gear.cpp test/main.cpp -o main.exe
